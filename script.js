@@ -12,6 +12,12 @@ function handleEnter() {
   setTimeout(() => this.classList.add("trigger-enter-active"), 150);
 
   background.classList.add("open");
+
+  const dropdown = this.querySelector(".dropdown");
+
+  const dropdownCoords = dropdown.getBoundingClientRect(); // find out the coordinates of the dropdowns
+
+  console.log(dropdownCoords);
 }
 
 function handleLeave() {
