@@ -17,7 +17,9 @@ function handleEnter() {
 
   const dropdownCoords = dropdown.getBoundingClientRect(); // find out the coordinates of the dropdowns
 
-  console.log(dropdownCoords);
+  const navCoords = nav.getBoundingClientRect();
+
+  console.log(navCoords);
 }
 
 function handleLeave() {
