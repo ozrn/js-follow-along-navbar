@@ -19,7 +19,15 @@ function handleEnter() {
 
   const navCoords = nav.getBoundingClientRect();
 
-  console.log(navCoords);
+  const coords = {
+
+    height: dropdownCoords.height,
+    width: dropdownCoords.width
+  }
+
+  background.style.setProperty("height", `${coords.height}px`);
+
+  background.style.setProperty("width", `${coords.width}px`);
 }
 
 function handleLeave() {
